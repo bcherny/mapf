@@ -1,0 +1,32 @@
+{
+  "name": "mapf",
+  "version": "1.0.0",
+  "description": "Ergonomic Promise.all",
+  "main": "index.js",
+  "typings": "index.d.ts",
+  "scripts": {
+    "build": "rm ./*.d.ts && tsc",
+    "pretest": "npm run build",
+    "prepublish": "npm test",
+    "test": "ava",
+    "tdd": "npm run watch & ava -w",
+    "watch": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bcherny/mapf.git"
+  },
+  "keywords": [
+  ],
+  "author": "Boris Cherny <boris@performancejs.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bcherny/mapf/issues"
+  },
+  "homepage": "https://github.com/bcherny/mapf#readme",
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "tslint": "^4.3.1",
+    "typescript": "^2.1.5"
+  }
+}
