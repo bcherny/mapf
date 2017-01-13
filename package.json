@@ -1,11 +1,11 @@
 {
   "name": "mapf",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Ergonomic Promise.all",
   "main": "index.js",
   "typings": "index.d.ts",
   "scripts": {
-    "build": "rm ./*.d.ts && tsc",
+    "build": "rm ./*.d.ts; tsc",
     "pretest": "npm run build",
     "prepublish": "npm test",
     "test": "ava",
